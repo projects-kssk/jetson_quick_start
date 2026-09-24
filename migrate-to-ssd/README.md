@@ -4,6 +4,8 @@ Move a working SD-card Jetson installation onto an NVMe SSD and make the SSD the
 
 The three step scripts (`make_partitions.sh`, `copy_partitions.sh`, `configure_ssd_boot.sh`) are vendored unmodified from [jetsonhacks/migrate-jetson-to-ssd](https://github.com/jetsonhacks/migrate-jetson-to-ssd). `migrate-to-ssd.sh` is a local wrapper that runs all three in order. Tested on JetPack 6.x with a Jetson Orin Nano/NX Developer Kit.
 
+**Doing this from the flashing PC over USB-C?** See [instruction.md](instruction.md) and run `./migrate-from-host.sh` from the PC.
+
 ## When to use this
 
 You currently boot from a microSD card and want the Jetson to boot from an NVMe SSD instead, keeping the same OS/config you already have set up (rather than reflashing from scratch).
